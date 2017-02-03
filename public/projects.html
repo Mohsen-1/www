@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/velocity.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("a.fancybox").fancybox({
+          transitionIn : 'fade',
+          transitionOut : 'fade',
+          speedIn : 600, 
+          speedOut : 200, 
+          overlayShow : true,
+          type : 'iframe',
+          autoScale : false,
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <table>
+
+      <tr>
+        <td>
+          <a class="fancybox" href="projects/buoy.html"><img src="photos/buoy1.jpg"></a>
+          <h2>Autonomous Swarming Buoy</h2>
+        </td>
+        <td>
+          <a class="fancybox" href="projects/eboard.html"><img src="photos/eboard1.jpg"></a>
+          <h2>Motorized Electric Longboard</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a class="fancybox" href="projects/robot.html"><img src="photos/robot1.jpg"></a>
+          <h2>VEX Robot</h2>
+        </td>
+        <td>
+          <a class="fancybox" href="projects/sundial.html"><img src="photos/sundial1.jpg"></a>
+          <h2>Sundial</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a class="fancybox" href="projects/pendulum.html"><img src="photos/pendulum1.jpg"/></a>
+          <h2>Double Pendulum</h2>
+        </td>
+        <td>
+          <a class="fancybox" href="projects/door_knocker.html"><img src="photos/door_knocker1.jpg"></a>
+          <h2>Door Knocker</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a class="fancybox" href="projects/shirt.html"><img src="photos/shirt1.jpg"></a>
+          <h2>Simmons Hall T-shirt Design</h2>
+        </td>
+        <td>
+          <a class="fancybox" href="projects/java_game.html"><img src="photos/java_game1.jpg"></a>
+          <h2>Collision Avoidance Java Game</h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a class="fancybox" href="projects/photo.html"><img src="photos/photo1.jpg"></a>
+          <h2>Photography</h2>
+        </td>
+        <td>
+          <img src="">
+          <h2>More comming soon...</h2>
+        </td>
+      </tr>
+
+    </table>
+  </body>
+</html>
