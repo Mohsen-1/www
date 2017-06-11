@@ -3,29 +3,37 @@
   <head>
     <Title>Countdown</Title>
     <style>
-			#myProgress {
-  				width: 100%;
-  				background-color: #808080;
-			}
-			#myBar {
-  				width: 0%;
-  				height: 30px;
-  				background-color: #FFE400;
+		  #myProgress {
+  		  width: 100%;
+        background-color: #808080;
+      }
+      #myBar {
+        width: 0%;
+  			height: 30px;
+  			text-align: center;
+  			line-height: 30px;
+  			background-color: #FFE400;
+  			color: #262626;
+  			font-family: Arial;
+  			font-weight: bold;
 			}
 		</style>
   </head>
+
   <body bgcolor="black" align="center">
     <iframe src="http://free.timeanddate.com/countdown/i5qqk5sf/n43/cf12/cm0/cu1/ct0/cs0/ca0/co1/cr0/ss0/cacffe400/cpcffe400/pct/tcfff/fs200/szw320/szh135/tatTime%20until%20we%20hug/tacffe400/tptWe%20have%20hugged!/tpcffe400/iso2017-09-02T15:00:00/pa16" allowTransparency="true" frameborder="0" width="353" height="128"></iframe>
     <div id="myProgress">
-  			<div id="myBar"></div>
+  		<div id="myBar"></div>
 		</div>
 		<script type="text/javascript">
-  			var elem = document.getElementById("myBar");
-  			var startDate = new Date("May 27, 2017 15:00:00").getTime();
-  			var endDate = new Date("September 2, 2017 15:00:00").getTime();
-  			var currentDate = new Date().getTime();
-  			var progress = (currentDate-startDate)/(endDate-startDate);
-  			elem.style.width = progress*100 + "%";
+  		var elem = document.getElementById("myBar");
+  		var startDate = new Date("May 27, 2017 15:00:00").getTime();
+  		var endDate = new Date("September 2, 2017 15:00:00").getTime();
+  		var currentDate = new Date().getTime();
+  		var progress = (currentDate-startDate)/(endDate-startDate);
+  		var truncatedProgress = Math.floor(progress * 100);
+  		elem.innerHTML = truncatedProgress + "%";
+  		elem.style.width = progress*100 + "%";
 		</script>
   </body>
 </html>
